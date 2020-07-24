@@ -11,4 +11,4 @@ script:
   - npm run build
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker build -t inchong/docker-demo:latest .
-  - docker push pea3nut/pea3nut-info:latest
+  - docker push inchong/docker-demo:latest
